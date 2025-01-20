@@ -1,0 +1,6 @@
+The difference between addTwoV1()and addTwoV2() is what they add 2 to.
+addTwoV1() returns the input+2. Meanwhile addTwoV2() adds 2 to the
+value of the memory address of where the input x is pointing 2 and 
+returns it. Essentially the first just have x as its local and
+gives the computed output. The second one however, changes a value
+in memory before returning that newly changed value.

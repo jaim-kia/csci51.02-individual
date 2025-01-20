@@ -1,0 +1,7 @@
+1. When you place a non-integer in the program, the input is not set to
+the variable because x is already set as an integer. It then gets treated
+as 0 allowing the program to function.
+
+2. If a float variable is fed into the program, the only thing that will
+be saved to the variable is the whole number essentially acting as a
+floor function and then adding 2 on top of it.
