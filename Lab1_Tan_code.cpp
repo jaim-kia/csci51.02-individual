@@ -2,18 +2,32 @@
 #include <string>
 using namespace std;
 
+// Function for Number 5
+void nextLetter(char* letter) {
+    char nextLetter = *letter + 1;
+    if(*letter == 'z') {
+        *letter = 'a';
+    }
+    else if(*letter == 'Z') {
+        *letter = 'A';
+    }
+    else if(('a' <= *letter && *letter < 'z') || ('A' <= *letter && *letter < 'Z')) {
+        *letter = nextLetter;
+    }
+}
+
 int main(void) {
     string name;
 
     // Number 1
-    cout << "Enter your name: ";
+    cout << "1. Enter your name: ";
     cin >> name;
 
     // Number 2
-    cout << "Hello User: " << name;
-    cout << endl;
+    cout << "2. " << name << endl;
 
     // Number 3
+    cout << "3. ";
     for(int i = 0; i < name.length(); i++)
     {
         if (i == 0) {
@@ -26,6 +40,7 @@ int main(void) {
     cout << endl;
 
     // Number 4
+    cout << "4. ";
     for(int i=0; i < name.length(); i++)
     {
         char next = name[i] + 1;
@@ -35,8 +50,7 @@ int main(void) {
         else if(name[i] == 'Z') {
             cout << "A";
         }
-        else if('a' <= name[i] < 'z' || 'A' <= name[i] < 'Z') {
-            cout << name[i];
+        else if(('a' <= name[i] && name[i] < 'z') || ('A' <= name[i] && name[i] < 'Z')) {
             cout << next;
         }
         else {
@@ -45,7 +59,11 @@ int main(void) {
     }
     cout << endl;
     
-    // cout << name[0]+1;
-    // cout << endl;
+    // Number 5
+    for(int i=0; i < name.length(); i++)
+    {
+        nextLetter(&name[i]);
+    }
+    cout << "5. " << name << endl;
     return 0;
 }
