@@ -3,7 +3,7 @@
 using namespace std;
 
 int main(void) {
-    int x;
+    float x;
     cout << "Enter an integer: ";
     cin >> x; // cin >> name; CSCI 51.02 ...
     cout << "Received input: " << x;
