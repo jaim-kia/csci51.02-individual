@@ -25,7 +25,8 @@ void revString(char* s) {
 
 int main(int argc, char* argv[])
 {
-    // Item 1
+    // Item 1 - printing each argument
+    cout << "Item 1" << endl;
     for (int i = 0; i < argc; i++)
     {
         cout << "arg" << i << ": " << argv[i];
@@ -33,7 +34,8 @@ int main(int argc, char* argv[])
     }
     cout << endl;
 
-    // Item 2
+    // Item 2 - reverses the string
+    cout << "Item 2" << endl;
     for (int i = 0; i < argc; i++)
     {
         cout << "arg" << i << ": ";
@@ -42,10 +44,13 @@ int main(int argc, char* argv[])
     }
     cout << endl;
 
-    // Item 3
+    // Item 3 - uses the reversed string
+    cout << "Item 3" << endl;
     for (int i = 0; i < argc; i++)
     {
+        cout << "using c: ";
         printf("%c\n", argv[i][0]);
+        cout << "using s: ";
         printf("%s\n", argv[i]+1);
         cout << endl;
     }

@@ -1,6 +1,7 @@
-The difference between addTwoV1()and addTwoV2() is what they add 2 to.
-addTwoV1() returns the input+2. Meanwhile addTwoV2() adds 2 to the
-value of the memory address of where the input x is pointing 2 and 
-returns it. Essentially the first just have x as its local and
-gives the computed output. The second one however, changes a value
-in memory before returning that newly changed value.
+What is the difference between the two functions below, addTwoV1( ) and addTwoV2?
+
+The difference between addTwoV1() and addTwoV2() is what they add 2 to. addTwoV1() returns the input+2. Meanwhile addTwoV2() adds 2 to the value of the memory address of where the input x is pointing to and returns it. Essentially the first just have x as its local and gives the computed output (the function alone does not change anything in memory). The second one however, changes a value in memory before returning that newly changed value.
+
+What value does the variable x refer to in addTwoV1( ) and in addTwoV2?
+
+In addTwoV1(), the value of the variable x refers to a local variable where the initial value is the input from the parameter. The x in addTwoV2() on the other hand, points to a specific address line depending on what is fed to the parameter, essentially instantiating a pointer, so the value it has depends on what is presented on the address line it was given.

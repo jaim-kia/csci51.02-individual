@@ -11,7 +11,7 @@ void nextLetter(char* letter) {
     else if(*letter == 'Z') {
         *letter = 'A';
     }
-    else if(('a' <= *letter && *letter < 'z') || ('A' <= *letter && *letter < 'Z')) {
+    else if(('a' <= *letter && *letter < 'z') || ('A' <= *letter && *letter < 'Z')) { 
         *letter = nextLetter;
     }
 }
